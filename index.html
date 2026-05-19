@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <style>
+        /* 基础样式复位 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+        
+        /* 导航栏 */
+        header { background: #2c3e50; color: #fff; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        nav .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 2rem; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav ul li a:hover { color: #1abc9c; }
+
+        /* Section 通用样式 */
+        section { padding: 6rem 2rem 4rem; max-width: 1100px; margin: 0 auto; min-height: 80vh; }
+        h2 { font-size: 2.5rem; margin-bottom: 1.5rem; color: #2c3e50; border-bottom: 3px solid #1abc9c; display: inline-block; padding-bottom: 0.5rem; }
+
+        /* 1. Cover Letter 样式 */
+        #cover-letter { background-color: #ffffff; padding: 8rem 2rem 4rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-radius: 8px; margin-top: 2rem; }
+        .letter-content { font-size: 1.1rem; color: #555; max-width: 800px; }
+        .letter-content p { margin-bottom: 1.2rem; text-indent: 2em; }
+
+        /* 2. Portfolio 样式 */
+        #portfolio .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .project-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-info { padding: 1.5rem; }
+        .project-info h3 { margin-bottom: 0.5rem; color: #2c3e50; }
+        .project-info p { color: #666; font-size: 0.95rem; margin-bottom: 1rem; }
+        .project-link { color: #1abc9c; text-decoration: none; font-weight: bold; }
+
+        /* 3. Contact Me 样式 */
+        #contact { background: #ecf0f1; text-align: center; border-radius: 8px; padding: 4rem 2rem; }
+        .contact-container { max-width: 600px; margin: 0 auto; }
+        .contact-info { margin-bottom: 2rem; font-size: 1.2rem; }
+        .contact-info p { margin: 0.5rem 0; }
+        .contact-btn { display: inline-block; background: #1abc9c; color: white; padding: 0.8rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+        .contact-btn:hover { background: #16a085; }
+
+        /* 页脚 */
+        footer { text-align: center; padding: 2rem; background: #2c3e50; color: #fff; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <div class="logo">我的名字</div>
+            <ul>
+                <li><a href="#cover-letter">求职信</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section 1: Cover Letter -->
+    <section id="cover-letter">
+        <h2>Cover Letter</h2>
+        <div class="letter-content">
+            <p>尊敬的招聘主管：</p>
+            <p>您好！我是[你的名字]，很高兴能向贵公司递交我的求职信。我一直密切关注贵公司的发展，并对[目标岗位]一职充满了极大的热情。</p>
+            <p>在过去的工作/学习经历中，我深耕于[你的专业领域/技能]，积累了丰富的实战经验。我不仅能够熟练运用[技能A]和[技能B]，还曾主导过[某重要项目/成果]，帮助团队提升了效率。</p>
+            <p>我具备极强的自学能力和团队协作精神，渴望能将我的经验带入贵公司，与优秀的团队共同成长。随信附上我的作品集，期待能有机会与您进一步面谈。</p>
+            <p>此致，<br>敬礼！</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Portfolio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <!-- 作品 1 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>项目名称一</h3>
+                    <p>简短描述这个项目是什么，你使用了什么技术（如 HTML, JavaScript, Python 等），以及它解决了什么问题。</p>
+                    <a href="#" class="project-link">查看项目 →</a>
+                </div>
+            </div>
+            <!-- 作品 2 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>项目名称二</h3>
+                    <p>简短描述这个项目是什么，你使用了什么技术（如 HTML, JavaScript, Python 等），以及它解决了什么问题。</p>
+                    <a href="#" class="project-link">查看项目 →</a>
+                </div>
+            </div>
+            <!-- 作品 3 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>项目名称三</h3>
+                    <p>简短描述这个项目是什么，你使用了什么技术（如 HTML, JavaScript, Python 等），以及它解决了什么问题。</p>
+                    <a href="#" class="project-link">查看项目 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Contact Me -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>📧 电子邮箱：your-email@example.com</p>
+                <p>📱 电话/微信：+86 123-4567-8910</p>
+                <p>📍 现居城市：中国 · 上海</p>
+            </div>
+            <a href="mailto:your-email@example.com" class="contact-btn">发送邮件给我</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2026 我的名字. 保留所有权利.</p>
+    </footer>
+
+</body>
+</html>
