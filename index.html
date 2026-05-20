@@ -1,4 +1,3 @@
-Lindsay's Customizable Portfolio:index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +11,9 @@ Lindsay's Customizable Portfolio:index.html
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     
     <style>
-        /* =========================================
-          🎨 HIGH-FASHION COLOR PALETTE (时尚行业黑白朱红配色)
+        /* 
+          =========================================
+          🎨 THEME CONFIGURATION (时尚行业黑白朱红配色)
           =========================================
         */
         :root {
@@ -77,6 +77,7 @@ Lindsay's Customizable Portfolio:index.html
             letter-spacing: 4px; 
             text-transform: uppercase; 
             color: var(--accent-color); 
+            text-decoration: none;
             transition: opacity 0.3s;
         }
         nav .logo:hover {
@@ -123,10 +124,10 @@ Lindsay's Customizable Portfolio:index.html
             font-weight: 400; 
         }
 
-        /* 1. Cover Letter 样式 (极致书信排版) */
+        /* 1. Cover Letter 样式 */
         #cover-letter { 
-            background-color: var(--card-bg); 
-            padding: 5rem 0; /* 移除外卡片感，转为直接印在白墙上的高级画报感 */
+            background-color: var(--bg-color); 
+            padding: 10rem 2rem 6rem;
         }
         .letter-content { 
             font-size: 1.05rem; 
@@ -188,7 +189,7 @@ Lindsay's Customizable Portfolio:index.html
         .project-card { 
             background: var(--card-bg); 
             border: 1px solid var(--border-color); 
-            border-radius: 0px; /* 极简直角，拒绝圆角，展现硬朗冷峻的时尚态度 */
+            border-radius: 0px; /* 极简直角设计 */
             overflow: hidden; 
             transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
         }
@@ -300,7 +301,7 @@ Lindsay's Customizable Portfolio:index.html
                 font-size: 2.2rem;
             }
             #cover-letter {
-                padding: 2rem 0;
+                padding: 7rem 1.5rem 4rem;
             }
             .highlight-box {
                 padding: 1.5rem;
@@ -323,11 +324,11 @@ Lindsay's Customizable Portfolio:index.html
     <!-- 顶部导航栏 -->
     <header>
         <nav>
-            <div class="logo">LINDSAY</div>
+            <a href="#" class="logo">LINDSAY</a>
             <ul>
                 <li><a href="#cover-letter">Cover Letter</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
