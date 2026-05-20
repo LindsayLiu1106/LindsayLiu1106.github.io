@@ -154,4 +154,262 @@ Lindsay's Customizable Portfolio:index.html
             font-family: var(--font-sans);
             font-style: normal;
             font-size: 0.9rem;
-            letter-spacing
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        
+        .salutation { 
+            font-family: var(--font-display);
+            font-size: 1.4rem; 
+            color: var(--text-color); 
+            margin-bottom: 2.5rem; 
+            letter-spacing: 1px;
+        }
+        .sign-off { 
+            margin-top: 4rem; 
+            font-family: var(--font-display);
+            font-size: 1.25rem; 
+            line-height: 1.6; 
+        }
+
+        /* 2. Portfolio 样式 */
+        #portfolio {
+            border-top: 1px solid var(--border-color);
+        }
+        #portfolio .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 3rem; 
+            margin-top: 1rem; 
+        }
+        .project-card { 
+            background: var(--card-bg); 
+            border: 1px solid var(--border-color); 
+            border-radius: 0px; /* 极简直角，拒绝圆角，展现硬朗冷峻的时尚态度 */
+            overflow: hidden; 
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+        }
+        .project-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04); 
+            border-color: var(--accent-color); 
+        }
+        .project-info { 
+            padding: 3rem 2.5rem; 
+        }
+        .project-info h3 { 
+            font-family: var(--font-display);
+            margin-bottom: 1.2rem; 
+            color: var(--text-color); 
+            font-weight: 400; 
+            letter-spacing: 1px; 
+            font-size: 1.5rem; 
+        }
+        .project-info p { 
+            color: #666; 
+            font-size: 0.95rem; 
+            margin-bottom: 2.5rem; 
+            font-weight: 300;
+            line-height: 1.8;
+        }
+        .project-link { 
+            color: var(--text-color); 
+            text-decoration: none; 
+            font-weight: 500; 
+            font-size: 0.8rem; 
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            transition: all 0.3s; 
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .project-link:hover { 
+            color: var(--accent-color); 
+            border-bottom-color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        /* 3. Contact Me 样式 */
+        #contact { 
+            background: var(--nav-bg); 
+            color: var(--nav-text); 
+            text-align: center; 
+            padding: 8rem 2rem; 
+            margin-top: 6rem; 
+            transition: all 0.3s ease;
+        }
+        #contact h2 { 
+            color: var(--nav-text); 
+            border-bottom: 2px solid var(--accent-color); 
+            margin-bottom: 3.5rem;
+        }
+        .contact-container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+        .contact-info { 
+            margin: 3.5rem 0; 
+            font-size: 1.15rem; 
+            font-weight: 300; 
+        }
+        .contact-info p { 
+            margin: 1.2rem 0; 
+            letter-spacing: 1.5px; 
+        }
+        .contact-btn { 
+            display: inline-block; 
+            background: var(--accent-color); 
+            color: #FFFFFF; 
+            padding: 1.2rem 3.5rem; 
+            text-decoration: none; 
+            font-weight: 500; 
+            font-size: 0.85rem;
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            transition: all 0.4s; 
+            border: 1px solid var(--accent-color);
+        }
+        .contact-btn:hover { 
+            background: transparent; 
+            color: var(--accent-color); 
+            border-color: var(--accent-color);
+        }
+
+        /* 页脚 */
+        footer { 
+            text-align: center; 
+            padding: 3rem; 
+            background: #000000; 
+            color: #555; 
+            font-size: 0.75rem; 
+            letter-spacing: 2px; 
+            text-transform: uppercase;
+            border-top: 1px solid rgba(255,255,255,0.02);
+        }
+
+        /* 移动端排版优化 */
+        @media (max-width: 768px) {
+            section {
+                padding: 7rem 1.5rem 4rem;
+            }
+            h2 {
+                font-size: 2.2rem;
+            }
+            #cover-letter {
+                padding: 2rem 0;
+            }
+            .highlight-box {
+                padding: 1.5rem;
+            }
+            nav .logo {
+                font-size: 1.4rem;
+            }
+            nav ul li {
+                margin-left: 1.2rem;
+            }
+            nav ul li a {
+                font-size: 0.75rem;
+                letter-spacing: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航栏 -->
+    <header>
+        <nav>
+            <div class="logo">LINDSAY</div>
+            <ul>
+                <li><a href="#cover-letter">Cover Letter</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section 1: Cover Letter -->
+    <section id="cover-letter">
+        <h2>Cover Letter</h2>
+        <div class="letter-content">
+            <p class="salutation">To the Hiring Committee / Creative Director,</p>
+            
+            <p>I am writing to express my enthusiastic interest in the Stylist position at your company. With a solid foundation in luxury fashion, a proven track record of directing high-profile seasonal campaigns, and an innate ability to translate brand DNA into compelling visual narratives, I am eager to bring my expertise in commercial styling and visual strategy to your creative team.</p>
+            
+            <p>What sets me apart from traditional stylists is my unique background as a strategy-driven, brand-savvy visual creator. Having overseen the quarterly marketing and creative direction at STELLA LUNA, I do not view styling as a standalone artistic expression, but rather as a powerful vehicle for brand storytelling and commercial conversion. I understand how to balance avant-garde aesthetics with marketplace reality, ensuring that every look curated not only captivates the audience but also drives brand equity.</p>
+            
+            <div class="highlight-box">
+                <strong>Industry Experience Highlight</strong>
+                <strong>Creative & Styling Direction:</strong> I actively directed the styling for STELLA LUNA’s seasonal advertising campaigns and lookbooks. My role involved collaborating closely with photographers, directors, and production teams to conceptualize and execute visual themes that defined the brand’s image.
+            </div>
+
+            <p>Furthermore, my deep-rooted relationships with top celebrity stylists have allowed me to consistently secure premium celebrity placements, turning high-fashion styling into immediate social media traction and viral moments.</p>
+
+            <p>In addition to my on-set capabilities, I possess a rare skill in styling education and knowledge transfer. I have successfully created and delivered comprehensive styling and trend training programs for retail and internal teams. I excel at breaking down complex, high-fashion concepts into actionable, commercial styling vocabulary that frontline teams can utilize to inspire consumers.</p>
+
+            <p>I am a collaborative creator who thrives in the synergy of a brainstorming room and the high-energy environment of a photo shoot. I am fluent in the languages of both the creative talent and the brand stakeholders, making me a highly efficient, asset-generating partner on any set.</p>
+
+            <p>I would welcome the opportunity to discuss how my distinct blend of fashion instinct, commercial acumen, and high-level campaign experience can contribute to your upcoming projects. Thank you for your time, and I look forward to sharing my lookbook and portfolio with you.</p>
+            
+            <p class="sign-off">
+                Sincerely,<br>
+                <strong>Lindsay</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 2: Portfolio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <!-- 作品 1 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>STELLA LUNA Campaigns</h3>
+                    <p>Seasonal advertising campaigns and digital lookbooks. Directed creative styling, conceptualized themes, and collaborated with top-tier photographers and production crews.</p>
+                    <a href="#" class="project-link">View Gallery →</a>
+                </div>
+            </div>
+            <!-- 作品 2 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Celebrity Placements</h3>
+                    <p>A curated collection of premium celebrity styling and editorial placements, leveraging viral moments to maximize brand exposure and social media engagement.</p>
+                    <a href="#" class="project-link">View Highlights →</a>
+                </div>
+            </div>
+            <!-- 作品 3 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Styling & Trend Training</h3>
+                    <p>Comprehensive lookbooks and actionable styling guides developed for internal retail teams to translate high-fashion concepts into retail sales.</p>
+                    <a href="#" class="project-link">View Case Study →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Contact Me -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>📧 Email: liulindsay66@gmail.com</p>
+                <p>📱 Phone: +852 69579466</p>
+                <p>📍 Location: Sha Tin, Hong Kong</p>
+            </div>
+            <a href="mailto:liulindsay66@gmail.com" class="contact-btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2026 LINDSAY. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
