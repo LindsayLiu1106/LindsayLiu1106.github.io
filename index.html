@@ -1,3 +1,4 @@
+Lindsay's Portfolio Ready:index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -217,7 +218,7 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.04); 
             border-color: var(--accent-color); 
         }
-        .project-card:hover .project-image {
+        .project-hover-trigger:hover .project-image {
             transform: scale(1.06);
         }
 
@@ -400,50 +401,50 @@
         <div class="grid">
             
             <!-- 作品 1：Styling -->
-            <div class="project-card">
+            <div class="project-card project-hover-trigger">
                 <div class="project-image-wrapper">
-                    <!-- 💡 替换下方的 url('...') 为你自己的 Styling 封面图片 -->
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000&auto=format&fit=crop');"></div>
+                    <!-- 💡 默认读取 images 文件夹下的 styling_cover.jpg -->
+                    <div class="project-image" style="background-image: url('images/styling_cover.jpg');"></div>
                 </div>
                 <div class="project-info">
                     <div>
                         <h3>Styling</h3>
                         <p>High-fashion editorial styling, digital lookbooks, and actionable trend guides created for global audiences and retail success.</p>
                     </div>
-                    <!-- 💡 替换下面的 href="#" 为你的作品链接（如 PDF 或 Behance） -->
-                    <a href="#" target="_blank" class="project-link">View Gallery →</a>
+                    <!-- 💡 默认读取 assets 文件夹下的 styling_portfolio.pdf -->
+                    <a href="assets/styling_portfolio.pdf" target="_blank" class="project-link">View Gallery →</a>
                 </div>
             </div>
 
             <!-- 作品 2：Marketing Campaigns -->
-            <div class="project-card">
+            <div class="project-card project-hover-trigger">
                 <div class="project-image-wrapper">
-                    <!-- 💡 替换下方的 url('...') 为你自己的 Campaign 封面图片 -->
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop');"></div>
+                    <!-- 💡 默认读取 images 文件夹下的 campaigns_cover.jpg -->
+                    <div class="project-image" style="background-image: url('images/campaigns_cover.jpg');"></div>
                 </div>
                 <div class="project-info">
                     <div>
                         <h3>Marketing Campaigns</h3>
                         <p>Creative direction and campaign strategies for STELLA LUNA, balancing vanguard aesthetics with commercial conversions.</p>
                     </div>
-                    <!-- 💡 替换下面的 href="#" 为你的作品链接 -->
-                    <a href="#" target="_blank" class="project-link">View Highlights →</a>
+                    <!-- 💡 默认读取 assets 文件夹下的 campaigns_portfolio.pdf -->
+                    <a href="assets/campaigns_portfolio.pdf" target="_blank" class="project-link">View Highlights →</a>
                 </div>
             </div>
 
             <!-- 作品 3：PR Clipping -->
-            <div class="project-card">
+            <div class="project-card project-hover-trigger">
                 <div class="project-image-wrapper">
-                    <!-- 💡 替换下方的 url('...') 为你自己的 PR 封面图片 -->
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop');"></div>
+                    <!-- 💡 默认读取 images 文件夹下的 pr_cover.jpg -->
+                    <div class="project-image" style="background-image: url('images/pr_cover.jpg');"></div>
                 </div>
                 <div class="project-info">
                     <div>
                         <h3>PR Clipping</h3>
                         <p>Editorial placements, press coverage, and celebrity collaborations driving instant social media traction and authority-led engagement.</p>
                     </div>
-                    <!-- 💡 替换下面的 href="#" 为你的作品链接 -->
-                    <a href="#" target="_blank" class="project-link">View Case Study →</a>
+                    <!-- 💡 默认读取 assets 文件夹下的 pr_portfolio.pdf -->
+                    <a href="assets/pr_portfolio.pdf" target="_blank" class="project-link">View Case Study →</a>
                 </div>
             </div>
 
@@ -470,3 +471,6 @@
 
 </body>
 </html>
+```eof
+
+---
