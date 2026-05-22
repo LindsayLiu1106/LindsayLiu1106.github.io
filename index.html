@@ -1,3 +1,4 @@
+Lindsay's Portfolio Final Version:index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,26 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lindsay | Portfolio & Creative Direction</title>
     
-    <!-- 引入高级时尚谷歌字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     
     <style>
-        /* 
-          =========================================
+        /* =========================================
           🎨 THEME CONFIGURATION (时尚行业黑白朱红配色)
           =========================================
         */
         :root {
-            --bg-color: #FFFFFF;         /* 网页大背景：纯白色，留出极简艺术画廊般的空间感 */
+            --bg-color: #FFFFFF;         /* 网页大背景：纯白色 */
             --text-color: #111111;       /* 主文字颜色：高对比极致深黑 */
-            --accent-color: #E23E25;     /* 核心强调色：高定秀场黄调朱红色 (Warm Vermilion) */
+            --accent-color: #E23E25;     /* 核心强调色：秀场朱红色 */
             --card-bg: #FFFFFF;          /* 卡片背景：纯白 */
-            --border-color: #E5E5E5;     /* 极简细分割线：浅灰 */
+            --border-color: #E5E5E5;     /* 极简细分割线 */
             
-            --nav-bg: #111111;           /* 导航栏背景：沉稳黑 */
-            --nav-text: #FFFFFF;         /* 导航栏文字：经典白 */
+            --nav-bg: #111111;           /* 导航栏背景 */
+            --nav-text: #FFFFFF;         /* 导航栏文字 */
             
             /* 字体定义 */
             --font-display: 'Playfair Display', serif;
@@ -145,7 +144,7 @@
             border-left: 3px solid var(--accent-color); 
             padding: 2.5rem; 
             margin: 3.5rem 0; 
-            background: rgba(226, 62, 37, 0.03); /* 微微浸染的极淡朱红底色 */
+            background: rgba(226, 62, 37, 0.03); 
             font-family: var(--font-display);
             font-size: 1.2rem;
             font-style: italic;
@@ -189,7 +188,7 @@
         .project-card { 
             background: var(--card-bg); 
             border: 1px solid var(--border-color); 
-            border-radius: 0px; /* 极简直角设计 */
+            border-radius: 0px; 
             overflow: hidden; 
             display: flex;
             flex-direction: column;
@@ -352,7 +351,6 @@
 </head>
 <body>
 
-    <!-- 顶部导航栏 -->
     <header>
         <nav>
             <a href="#" class="logo">LINDSAY</a>
@@ -364,7 +362,6 @@
         </nav>
     </header>
 
-    <!-- Section 1: Cover Letter -->
     <section id="cover-letter">
         <h2>Cover Letter</h2>
         <div class="letter-content">
@@ -394,55 +391,45 @@
         </div>
     </section>
 
-    <!-- Section 2: Portfolio -->
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="grid">
             
-            <!-- 作品 1：Styling -->
             <div class="project-card project-hover-trigger">
                 <div class="project-image-wrapper">
-                    <!-- 💡 默认读取 images 文件夹下的 styling_cover.jpg -->
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000&auto=format&fit=crop');"></div>
+                    <div class="project-image" style="background-image: url('images/styling_cover.jpg');"></div>
                 </div>
                 <div class="project-info">
                     <div>
                         <h3>Styling</h3>
                         <p>High-fashion editorial styling, digital lookbooks, and actionable trend guides created for global audiences and retail success.</p>
                     </div>
-                    <!-- 💡 默认读取 assets 文件夹下的 styling_portfolio.pdf -->
                     <a href="assets/styling_portfolio.pdf" target="_blank" class="project-link">View Gallery →</a>
                 </div>
             </div>
 
-            <!-- 作品 2：Marketing Campaigns -->
             <div class="project-card project-hover-trigger">
                 <div class="project-image-wrapper">
-                    <!-- 💡 默认读取 images 文件夹下的 campaigns_cover.jpg -->
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop');"></div>
+                    <div class="project-image" style="background-image: url('images/campaigns_cover.jpg');"></div>
                 </div>
                 <div class="project-info">
                     <div>
                         <h3>Marketing Campaigns</h3>
                         <p>Creative direction and campaign strategies for STELLA LUNA, balancing vanguard aesthetics with commercial conversions.</p>
                     </div>
-                    <!-- 💡 默认读取 assets 文件夹下的 campaigns_portfolio.pdf -->
                     <a href="assets/campaigns_portfolio.pdf" target="_blank" class="project-link">View Highlights →</a>
                 </div>
             </div>
 
-            <!-- 作品 3：PR Clipping -->
             <div class="project-card project-hover-trigger">
                 <div class="project-image-wrapper">
-                    <!-- 💡 默认读取 images 文件夹下的 pr_cover.jpg -->
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop');"></div>
+                    <div class="project-image" style="background-image: url('images/pr_cover.jpg');"></div>
                 </div>
                 <div class="project-info">
                     <div>
                         <h3>PR Clipping</h3>
-                        <p>High-profile celebrity placements and top-tier editorial features. Secured styling and campaign exposure with icons including <strong>Shu Qi (舒淇)</strong>, <strong>Liu Wen (刘雯)</strong>, and <strong>Jelly Lin (林允)</strong> across prestigious publications like <strong>Marie Claire (嘉人)</strong> and <strong>Harper's Bazaar (时尚芭莎)</strong>, translating coverage into instant social authority and brand engagement.</p>
+                        <p>High-profile celebrity placements and top-tier editorial features. Secured styling and campaign exposure with icons including <strong>Shu Qi (舒淇)</strong>, <strong>Liu Wen (刘雯)</strong>, and <strong>Jelly Lin (林允)</strong> across <strong>Marie Claire</strong> and <strong>Harper's Bazaar</strong>.</p>
                     </div>
-                    <!-- 💡 默认读取 assets 文件夹下的 pr_portfolio.pdf -->
                     <a href="assets/pr_portfolio.pdf" target="_blank" class="project-link">View Case Study →</a>
                 </div>
             </div>
@@ -450,7 +437,6 @@
         </div>
     </section>
 
-    <!-- Section 3: Contact Me -->
     <section id="contact">
         <div class="contact-container">
             <h2>Contact Me</h2>
@@ -463,7 +449,6 @@
         </div>
     </section>
 
-    <!-- 页脚 -->
     <footer>
         <p>&copy; 2026 LINDSAY. All rights reserved.</p>
     </footer>
